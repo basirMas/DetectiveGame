@@ -1,7 +1,22 @@
-walk_spd = 1.5;
-facing = 1;
+// Movement speed
+walk_spd = 1;
 
-//my_cursor = instance_create_layer(x, y, "Instances", o_cursor);
+// Movement variables
+hmove = 0;
+vmove = 0;
 
-cursor_sprite = s_cursor;
-window_set_cursor(cr_none);
+// Input direction flags
+left = false;
+right = false;
+up = false;
+down = false;
+
+// Facing direction (degrees: 0 = right, 90 = up, 180 = left, 270 = down)
+facing = 180;
+
+// Set initial sprite
+sprite_index = spr_FrankSpade_idle_down;
+image_speed = 0.1;
+
+
+
