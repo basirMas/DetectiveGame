@@ -9,7 +9,10 @@
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_solid",
+    "path":"objects/obj_solid/obj_solid.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_table2",
-    "path":"sprites/s_table2/s_table2.yy",
+    "name":"s_table_2",
+    "path":"sprites/s_table_2/s_table_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

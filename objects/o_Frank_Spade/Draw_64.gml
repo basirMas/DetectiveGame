@@ -47,3 +47,24 @@ with (o_walls_m) {
     draw_text(90, start_y, "Wall depth: " + string(depth));
     start_y += line_height;
 }
+
+// Show all doors’ depths
+with (o_door) {
+    draw_text(90, start_y, "door depth: " + string(depth));
+    start_y += line_height;
+}
+
+// Show all wall middle bottom’ depths
+with (o_walls_middle_bottom) {
+    draw_text(90, start_y, "o_walls_middle_bottom: " + string(depth));
+    start_y += line_height;
+}
+
+// Show all drawer depths
+with (o_drawer) {
+    draw_text(90, start_y, "o_drawer: " + string(depth));
+    start_y += line_height;
+}
+
+
+
