@@ -43,6 +43,7 @@
     {"id":{"name":"o_walls_l","path":"objects/o_walls_l/o_walls_l.yy",},},
     {"id":{"name":"o_walls_m","path":"objects/o_walls_m/o_walls_m.yy",},},
     {"id":{"name":"o_walls_r","path":"objects/o_walls_r/o_walls_r.yy",},},
+    {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"s_blackboard","path":"sprites/s_blackboard/s_blackboard.yy",},},
