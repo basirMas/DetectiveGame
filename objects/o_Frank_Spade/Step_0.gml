@@ -72,7 +72,7 @@ if (hmove != 0 || vmove != 0) {
 
 // Adjust depth based on overlap with draw-sensitive objects
 var lowest_depth = -y; // default fallback
-var objs = [ o_table, o_drawer, o_door,o_walls_middle_bottom]; // list of all draw-sensitive objects
+var objs = [ o_table, o_drawer, o_door,o_bookshelf,o_blackboard,o_seat, o_walls_middle_bottom]; // list of all draw-sensitive objects
 
 for (var i = 0; i < array_length(objs); i++) {
     with (objs[i]) {
@@ -80,7 +80,7 @@ for (var i = 0; i < array_length(objs); i++) {
         if (abs(other.x - x) < sprite_width && abs(other.y - y) < sprite_height) {
             if (other.y < y) {
                 other.depth = depth + 1; // behind
-            } else {
+            } else  if (other.y > y){
                 other.depth = depth - 1; // in front
             }
         }

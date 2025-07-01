@@ -48,11 +48,7 @@ with (o_walls_m) {
     start_y += line_height;
 }
 
-// Show all doors’ depths
-with (o_door) {
-    draw_text(90, start_y, "door depth: " + string(depth));
-    start_y += line_height;
-}
+
 
 // Show all wall middle bottom’ depths
 with (o_walls_middle_bottom) {
@@ -66,5 +62,20 @@ with (o_drawer) {
     start_y += line_height;
 }
 
+// Show all bookshelf depths
+with (o_bookshelf) {
+    draw_text(90, start_y, "o_bookshelf: " + string(depth));
+    start_y += line_height;
+}
 
+// Show all blackboards depths
+with (o_bookshelf) {
+    draw_text(90, start_y, "o_blackboard: " + string(depth));
+    start_y += line_height;
+}
 
+// Show all blackboards depths
+with (o_seat) {
+    draw_text(90, start_y, "o_seat: " + string(depth));
+    start_y += line_height;
+}

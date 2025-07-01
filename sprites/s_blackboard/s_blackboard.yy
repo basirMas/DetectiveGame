@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
   "%Name":"s_blackboard",
-  "bboxMode":0,
-  "bbox_bottom":63,
+  "bboxMode":2,
+  "bbox_bottom":14,
   "bbox_left":0,
   "bbox_right":62,
   "bbox_top":0,

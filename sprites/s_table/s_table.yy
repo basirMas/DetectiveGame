@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"s_table",
   "bboxMode":2,
-  "bbox_bottom":18,
+  "bbox_bottom":13,
   "bbox_left":0,
   "bbox_right":63,
   "bbox_top":12,
