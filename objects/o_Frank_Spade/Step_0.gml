@@ -23,7 +23,7 @@ if (hmove != 0 || vmove != 0) {
     
     facing = _dir;
    
- 
+} 
    
    
 // Horizontal collision
@@ -35,6 +35,9 @@ if (!place_meeting(x + hmove, y, obj_solid)) {
 if (!place_meeting(x, y + vmove, obj_solid)) {
     y += vmove;
 }
+
+
+
 
 
 
@@ -65,27 +68,37 @@ if (hmove != 0 || vmove != 0) {
     image_speed = 0;
     image_index = 0;
 }
-}
-
-  // Default depth based on y for tables, chairs, etc.
 
 
+// Default depth based on y for tables, chairs, etc.
 // Adjust depth based on overlap with draw-sensitive objects
 var lowest_depth = -y; // default fallback
-var objs = [ o_table, o_drawer, o_door,o_bookshelf,o_blackboard,o_seat, o_walls_middle_bottom]; // list of all draw-sensitive objects
+var objs = [ o_table, o_drawer, o_door,o_blackboard,o_seat, o_walls_middle_bottom, o_drawer_2, 
+o_drawer_2_open, o_document_box, o_chair_desk1, o_chair_desk_2, o_table2, o_hatstand]; // list of all draw-sensitive objects
 
 for (var i = 0; i < array_length(objs); i++) {
     with (objs[i]) {
         // Check vertical overlap
         if (abs(other.x - x) < sprite_width && abs(other.y - y) < sprite_height) {
-            if (other.y < y) {
-                other.depth = depth + 1; // behind
+             
+		   if (other.y < y) {
+                other.depth = depth + 2; // behind
             } else  if (other.y > y){
-                other.depth = depth - 1; // in front
+                other.depth = depth - 2; // in front
             }
         }
     }
-
+	
 
 } 
+
+//Raum spezifisch	 
+	if (other.y <= 98 && other.x <= 40 ) {
+		other.depth = 99;
+	}
+
+
+
+
+
   

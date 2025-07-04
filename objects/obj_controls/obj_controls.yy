@@ -8,8 +8,8 @@
   "name":"obj_controls",
   "overriddenProperties":[],
   "parent":{
-    "name":"DetectiveGame",
-    "path":"DetectiveGame.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
